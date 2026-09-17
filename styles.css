@@ -163,6 +163,75 @@ nav {
     filter: drop-shadow(0 4px 6px rgba(41, 39, 37, 0.25));
 }
 
+.contact {
+    padding: 5rem 8%;
+    background-color: var(--cream);
+}
+
+.contact-heading {
+    max-width: 700px;
+    margin: 0 auto 3rem;
+    text-align: center;
+}
+
+.contact-heading h2 {
+    margin: 0.5rem 0 1rem;
+    color: var(--aubergine);
+    font-size: clamp(2rem, 4vw, 3rem);
+}
+
+.contact-heading > p:last-child {
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+.contact-details {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    text-align: center;
+}
+
+.contact-item {
+    padding: 2rem;
+    border-top: 2px solid var(--gold);
+}
+
+.contact-item h3 {
+    margin-top: 0;
+    color: var(--aubergine);
+    font-size: 1.4rem;
+}
+
+.contact-item p {
+    margin-bottom: 0;
+    line-height: 1.7;
+}
+
+.contact-item a {
+    color: var(--aubergine);
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+
+.contact-item a:hover,
+.contact-item a:focus {
+    color: var(--olive);
+}
+
+footer {
+    padding: 2rem 8%;
+    background-color: var(--aubergine);
+    color: var(--cream);
+    text-align: center;
+}
+
+footer p {
+    margin: 0.25rem 0;
+}
+
 @media (max-width: 768px) {
     .hamburger {
         display: flex;
@@ -209,6 +278,11 @@ nav {
     .dish-grid {
         grid-template-columns: 1fr;
     }
+
+    .contact-details {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
 }
 
 /* Keyboard accessibility */
