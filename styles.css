@@ -71,6 +71,38 @@ nav {
     border: 0;
 }
 
+.about {
+    padding: 5rem 8%;
+    background-color: var(--cream);
+}
+
+.about-content {
+    max-width: 750px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.section-label {
+    margin-bottom: 0.5rem;
+    color: var(--olive);
+    font-size: 0.9rem;
+    font-weight: bold;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+}
+
+.about h2 {
+    margin: 0 0 1.5rem;
+    color: var(--aubergine);
+    font-size: clamp(2rem, 4vw, 3rem);
+}
+
+.about-content p:not(.section-label) {
+    margin: 0 auto 1rem;
+    font-size: 1.1rem;
+    line-height: 1.7;
+}
+
 @media (max-width: 768px) {
     .hamburger {
         display: flex;
